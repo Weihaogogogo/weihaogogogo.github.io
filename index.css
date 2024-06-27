@@ -1,0 +1,513 @@
+ /* 初始化样式表start */
+ *{
+    margin:0px;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+}
+.maxContainer{
+
+    width:100%;
+    max-width: 1920px;
+    min-width:1400px;
+    height:1400px;
+    background-image: url(./img/background.jpg);
+    background-size:2100px;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.slideContainer{
+    animation:jump 0.5s ease-in 0s infinite alternate;
+    position:absolute;
+    width:110px;
+    height:50px;
+    top:70%;
+    left:50%;
+}
+.slideContainer:hover{
+    cursor:pointer;
+}
+.slideTip{
+    content:'向下滑动';
+    font-size:18px;
+    color:#fff;
+    font-weight:bold;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    left:-55px;
+}
+.slideTip::after{
+    content:'';
+    border:40px solid transparent;
+    border-top-color:white;
+    position:relative;
+    top:10px;
+    display:block;
+}
+@keyframes jump{
+    from{transform:translateY(0px)}
+    to{transform:translateY(10px)}
+}
+.resumeContainer{
+    margin: 20px;
+    padding:60px;
+    width:100%;
+    max-width: 1500px;
+    min-width:1400px;
+    height:750px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+}
+.leftBox{
+    box-sizing:border-box;
+    width:34%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+.resumePhoto{
+    box-sizing:border-box;
+    border:40px solid white;
+    width:100%;
+    height:50%;
+    background-image: url(./img/hwh.jpg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.basicInformation{
+    box-sizing: border-box;
+    width:100%;
+    height:20%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name-text{
+    font-size: 40px;
+    line-height: 70px;
+    font-weight: bold;
+}
+.gender::after, .phoneNumber::after{
+    content: '|';
+    text-align: center;
+    width:20px;
+    font-size:20px;
+    display: inline-block;
+}
+.job{
+    font-size:20px;
+    font-weight: bold;
+    line-height:50px;
+}
+.personalSkill{
+    box-sizing:border-box;
+    border:30px solid white;
+    width:100%;
+    height:22%;
+    display:flex;
+    flex-direction: column;
+}
+.personalSkill>.line{
+    display:flex;
+    margin-top:8px;
+    justify-content: flex-start;
+}
+.skillTitle{
+    font-size:30px;
+    font-weight: bold;
+    line-height: 50px;
+    position: relative;
+    top:-10px;
+}
+.personalSkill .line1title{
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.personalSkill .line2title{
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+
+}
+.personalSkill .line3title{
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+
+}
+.rightBox{
+    width:66%;
+    height:100%;
+}
+.educationExp{
+    box-sizing:border-box;
+    border:30px solid white;
+    width:100%;
+    height:20%;
+    display: flex;
+    flex-direction: column;
+}
+.eduTitle{
+    font-size:30px;
+    line-height: 50px;
+    font-weight: bold;
+    position: relative;
+    top:-10px;
+}
+.edu1,.edu2,.edu3,.edu4{
+    display: flex;
+    margin-top:10px;
+}
+.school,.course,.certificate,.honor{
+    font-weight: bold;
+    white-space: nowrap;
+}
+.major::before, .major::after{
+    content:'|';
+    text-align: center;
+    display: inline-block;
+    width:20px;
+}
+
+.workingExp{
+    box-sizing:border-box;
+    border:30px solid white;
+    width:100%;
+    height:40%;
+}
+.workTitle{
+    font-size:30px;
+    line-height: 50px;
+    font-weight: bold;
+    position: relative;
+    top:-10px;
+}
+.work1{
+    display:flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.workduring{
+    font-weight: normal;
+}
+.work2,.work3,.work4{
+    display:flex;
+    margin-top:8px;
+}
+.duty,.project,.achieve{
+    white-space: nowrap;
+    font-weight: bold;
+}
+.projectExp{
+    box-sizing:border-box;
+    border:30px solid white;
+    width:100%;
+    height:35%;
+}
+.projectTitle{
+    font-size:30px;
+    line-height: 50px;
+    font-weight: bold;
+    position: relative;
+    top:-10px;
+}
+.pro1,.pro2,.pro3,.pro4,.pro5{
+    display: flex;
+    margin-top: 8px;
+}
+.pro1{
+    display: flex;
+    justify-content:space-between;
+    font-weight: bold;
+}
+.produring{
+    font-weight: normal;
+}
+.proback,.mainwork,.proachieve,.url{
+    white-space: nowrap;
+    font-weight: bold;
+}
+.TT::after{
+    content: '';
+    display: block;
+    background: linear-gradient(to right, black, white); 
+    width:300px;
+    height:5px;
+    position:relative;
+    top:-3px;
+
+}
+a{
+    display: inline-block;
+    width:80px;
+    
+}
+li{
+    list-style-type: none;
+}
+.menu a{
+    text-decoration: none;
+}
+.menu a:visited, .menu a:link, .menu a:hover, .menu a:active{
+    color:inherit;
+}
+/* 初始化样式表end */
+
+/* flex布局初始化start */
+.site-header{
+    width:100%;
+    display:flex;
+    min-width: 670px;
+    height:80px;
+    background-color: #000000;
+    opacity: 0;
+    transition:all linear 0.2s;
+    align-items: center;
+    justify-content: center;
+
+}
+.site-header:hover{
+    box-shadow:0px 5px 5px 0px rgba(0,0,0,0.15) ;
+    opacity: 0.7;   
+}
+.headPhotoContainer{
+    position:absolute;
+    right:30px;
+    top:10px;
+    z-index: 1;
+}
+.headPhoto{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.headPhoto:hover{
+    animation: ro 2s linear 0s infinite;
+    
+}
+@keyframes ro{
+    from {transform:rotate(0deg)}
+    to{transform:rotate(360deg)}
+}
+.headBubble{
+    opacity:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:220px;
+    height:35px;
+    font-size:12px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15) ;
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top:75px;
+    right:-20px;
+    border-radius:8px;
+    transition: all linear 0.3s;
+    user-select: none;
+}
+    /* 造箭头 */
+.headBubble::after{
+    content: '';  
+    position:absolute;
+    top:-20px;
+    left:163px;
+    border:10px solid transparent;
+    border-bottom-color:rgba(255, 255, 255, 1); 
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+.menu li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:relative;
+}
+/* 布局初始化end */
+
+/* 样式start */
+.menu{
+
+}
+
+.menu li{
+    color:white;
+    opacity: 0.9;
+    text-align: center;
+    height:80px;
+    padding-left:40px;
+    padding-right:40px;
+    font-size:20px;
+    cursor: pointer;
+    transition:all linear 0.2s;
+}
+.menu li:hover, .menu li:active{
+    background-color: rgb(230, 106, 58);
+    font-size:25px;
+    color:white;           
+}
+
+
+.name{
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 100px;
+    color:white;
+    opacity: 0.9;
+    user-select: none;
+    display:block;
+    flex:0 0 100%;
+}
+
+.navi{
+    margin-top:10px;
+    height:60px;
+    width:400px;
+    min-width:350px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0,0.5);
+    border:1px solid rgba(255,255,255,0.5);
+    display: flex;
+    position:relative;
+    align-items: center;
+    justify-content: flex-start;
+    transition:all 0.5s ease;
+    padding:0px;
+
+}
+.navi:hover{
+    box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.4);
+}
+.bubble{
+    opacity: 0;
+    width:100px;
+    height:100px;
+    background-color: rgba(0, 0, 0,0.8);
+    position: absolute;
+    top:70px;
+    left:-15px;
+    background-image: url(./img/weixin.png);
+    background-size:80% 80% ;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8%;
+    transition: all linear 0.3s;
+}
+    /* 造箭头 */
+.bubble::after{
+    content: '';  
+    position:absolute;
+    top:-20px;
+    left:40px;
+    border:10px solid transparent;
+    border-bottom-color:rgba(0,0,0,0.8); 
+}
+.ico{
+    height:50px;
+    width: 50px;
+    opacity: 1;
+    padding-left:10px;
+    display: flex;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+}
+.ico:last-of-type{
+    padding-right:10px;
+}
+.ico img{
+    width:60%;
+    height:60%;
+}
+.plzWait{
+    font-size: 17px;
+    font-weight:bold ;
+    color:#fff;
+    padding-left:10px;
+    user-select: none;
+}
+
+.wxico, .xhsico{
+    transition:all 0.5s ease;
+    cursor: pointer;
+}
+.wxico:hover, .xhsico:hover{
+    transform:scale(1.2);
+}
+.bubble2{
+    opacity: 0;
+    width:100px;
+    height:100px;
+    background-color: rgba(0, 0, 0,0.8);
+    position: absolute;
+    top:70px;
+    left:-15px;
+    background-image: url(./img/xiaohongshu.png);
+    background-size:80% 80% ;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8%;
+    transition: all linear 0.3s;
+}
+    /* 造箭头 */
+.bubble2::after{
+    content: '';  
+    position:absolute;
+    top:-20px;
+    left:40px;
+    border:10px solid transparent;
+    border-bottom-color:rgba(0,0,0,0.8); 
+}
+.dot1,.dot2{
+    color:#fff;
+    font-size:50px;
+    position:relative;
+    top:5px;
+    user-select: none;
+}
+.dot2{
+    position:absolute;
+    right:0px;
+}
+.navi:hover .dot1{
+    animation:shake1 0.5s ease-out 0s 1;
+
+}
+.navi:hover .dot2{
+    animation:shake2 0.5s ease-out 0s 1;
+}
+@keyframes shake1{
+    30%{transform:translate(-10%,0)}
+    60%{transform:translate(20%,0)}
+    100%{transform:translate(-10%,0)}
+}
+@keyframes shake2{
+    30%{transform:translate(10%,0)}
+    60%{transform:translate(-20%,0)}
+    100%{transform:translate(10%,0)}
+}
+/* 样式end */
